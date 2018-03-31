@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'boards',
+    'accounts',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +126,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
 ]
+
+LOGOUT_REDIRECT_URL ='home'#这个配置告诉Django在成功登录后将用户重定向到哪里
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+LOGIN_URL = 'login'
