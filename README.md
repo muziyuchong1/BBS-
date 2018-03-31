@@ -10,6 +10,7 @@ BBS是一个论坛系统，整个项目的构思是维护几个论坛版块（bo
 登陆界面
 
 ![enter description here][1]
+
 注册界面
 
 ![enter description here][2]
